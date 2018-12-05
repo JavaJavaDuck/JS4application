@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">JS4application</string>
+    <string name="button1_button">1</string>
+    <string name="button2_button">2</string>
+    <string name="button3_button">3</string>
+    <string name="button4_button">+</string>
+
+    <string name="button5_button">4</string>
+    <string name="button6_button">5</string>
+    <string name="button7_button">6</string>
+    <string name="button8_button">-</string>
+
+    <string name="button9_button">7</string>
+    <string name="button10_button">8</string>
+    <string name="button11_button">9</string>
+    <string name="button12_button">*</string>
+
+    <string name="button16_button">C</string>
+    <string name="button13_button">0</string>
+    <string name="button14_button">=</string>
+    <string name="button15_button">/</string>
+
+    <string name="display">0</string>
+
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="password">password</string>
+</resources>

@@ -1,0 +1,149 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-21:12
+INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-21:12
+INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-21:12
+INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-21:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/aa71c8ac0a969e50537611c1501afa50/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/ab5724ac11fc63969aeca21f38fac608/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/c3994af042304c976589d59f5e080c3f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/68bb193a532f3cd16d7a22ccdc419a0c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/05539dc7babb90f8f61bee0bab599b51/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/1a58c963d2acd4409082443f8de6a6d7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/19514d724e7cca022a0aea826a663d43/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/cf538098203d27ffd091336205a3eb2b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/49e9231ad8ebf395ee2051ed6077e27a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/f68ddb930ab15276e83bd835dd86eca3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/a6d19bfaf6ac57504223561384d149aa/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/17390d537a56345800d0fb663e755c77/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/89a8cfdf592783f6702082bbc8db9592/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/89711dbdf194feaf430a2fdf1961272b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/d7875c6754aa1813a9f1bb125e243c19/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/b3a97e89c87caf0f89198a39bac6361c/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/4e567690b7a44bda3238ce9de7c9be0f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6b0bc3689017d5ca3d501f9ec5c2a8a0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/e59b5942dea3c0ce4c479bcc1fdb7c18/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/837f97027867270f514f73b898f4b2b4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/9334c8d0eeecc5873e20b3bccecae499/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/6708c63ab85b7e1a995215ad0ddd5181/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/55381e665981ef77ccf24e6dddf14ab5/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/c7932d5fe3cadf7f47c398738060176a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ca1f12c72525c72d953e98c28bdcb386/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/30080d67b0a34522ec4fa669b361c62b/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-21:12
+INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-21:12
+INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-21:12
+	package
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:2:5-46
+		INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-21:12
+		INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-21:12
+		INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:11-69
+application
+ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:4:5-18:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/d7875c6754aa1813a9f1bb125e243c19/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/d7875c6754aa1813a9f1bb125e243c19/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/b3a97e89c87caf0f89198a39bac6361c/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/b3a97e89c87caf0f89198a39bac6361c/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/d7875c6754aa1813a9f1bb125e243c19/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:9:9-35
+	android:label
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:7:9-41
+	android:roundIcon
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:8:9-54
+	android:icon
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:6:9-43
+	android:allowBackup
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:5:9-35
+	android:theme
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:10:9-40
+activity#com.example.tina.js4application.MainActivity
+ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:12:9-17:24
+	android:name
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:13:13-16:29
+category#android.intent.category.LAUNCHER
+ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:14:17-76
+	android:name
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:14:27-74
+action#android.intent.action.MAIN
+ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:15:17-68
+	android:name
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:15:25-66
+uses-sdk
+INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
+INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/aa71c8ac0a969e50537611c1501afa50/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/aa71c8ac0a969e50537611c1501afa50/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/ab5724ac11fc63969aeca21f38fac608/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/ab5724ac11fc63969aeca21f38fac608/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/c3994af042304c976589d59f5e080c3f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/c3994af042304c976589d59f5e080c3f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/68bb193a532f3cd16d7a22ccdc419a0c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/68bb193a532f3cd16d7a22ccdc419a0c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/05539dc7babb90f8f61bee0bab599b51/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/05539dc7babb90f8f61bee0bab599b51/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/1a58c963d2acd4409082443f8de6a6d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/1a58c963d2acd4409082443f8de6a6d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/19514d724e7cca022a0aea826a663d43/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/19514d724e7cca022a0aea826a663d43/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/cf538098203d27ffd091336205a3eb2b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/cf538098203d27ffd091336205a3eb2b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/49e9231ad8ebf395ee2051ed6077e27a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/49e9231ad8ebf395ee2051ed6077e27a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/f68ddb930ab15276e83bd835dd86eca3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/f68ddb930ab15276e83bd835dd86eca3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/a6d19bfaf6ac57504223561384d149aa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/a6d19bfaf6ac57504223561384d149aa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/17390d537a56345800d0fb663e755c77/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/17390d537a56345800d0fb663e755c77/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/89a8cfdf592783f6702082bbc8db9592/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/89a8cfdf592783f6702082bbc8db9592/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/89711dbdf194feaf430a2fdf1961272b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/89711dbdf194feaf430a2fdf1961272b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/d7875c6754aa1813a9f1bb125e243c19/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/d7875c6754aa1813a9f1bb125e243c19/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/b3a97e89c87caf0f89198a39bac6361c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/b3a97e89c87caf0f89198a39bac6361c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/4e567690b7a44bda3238ce9de7c9be0f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/4e567690b7a44bda3238ce9de7c9be0f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6b0bc3689017d5ca3d501f9ec5c2a8a0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6b0bc3689017d5ca3d501f9ec5c2a8a0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/e59b5942dea3c0ce4c479bcc1fdb7c18/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/e59b5942dea3c0ce4c479bcc1fdb7c18/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/837f97027867270f514f73b898f4b2b4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/837f97027867270f514f73b898f4b2b4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/9334c8d0eeecc5873e20b3bccecae499/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/9334c8d0eeecc5873e20b3bccecae499/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/6708c63ab85b7e1a995215ad0ddd5181/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/6708c63ab85b7e1a995215ad0ddd5181/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/55381e665981ef77ccf24e6dddf14ab5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/55381e665981ef77ccf24e6dddf14ab5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/c7932d5fe3cadf7f47c398738060176a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/c7932d5fe3cadf7f47c398738060176a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ca1f12c72525c72d953e98c28bdcb386/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ca1f12c72525c72d953e98c28bdcb386/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/30080d67b0a34522ec4fa669b361c62b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/30080d67b0a34522ec4fa669b361c62b/AndroidManifest.xml:20:5-44
+INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
+INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
