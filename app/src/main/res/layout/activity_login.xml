@@ -10,7 +10,8 @@
         <android.support.v7.widget.AppCompatEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="email@gmail.com"/>
+            android:hint="@string/email"
+            android:id="@+id/email_et"/>
 
     </LinearLayout>
 
@@ -23,7 +24,8 @@
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:password="true"
-            android:hint="@string/password"/>
+            android:hint="@string/password"
+            android:id="@+id/password_et"/>
 
     </LinearLayout>
 
@@ -35,12 +37,14 @@
         <android.support.v7.widget.AppCompatButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/login" />
+            android:text="@string/login"
+            android:id="@+id/login_btn"/>
 
         <android.support.v7.widget.AppCompatButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/register"/>
+            android:text="@string/register"
+            android:id="@+id/register_btn"/>
 
     </LinearLayout>
 </LinearLayout>
