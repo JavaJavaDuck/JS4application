@@ -2,29 +2,32 @@
 <instant-run
     abi="x86"
     api-level="28"
-    build-mode="HOT_WARM"
+    build-mode="COLD"
     density="xxhdpi"
     format="10"
     plugin-version="3.2.1"
-    timestamp="1544537342015"
+    timestamp="1544539908792"
     token="4593422003328817736"
-    verifier="COMPATIBLE" >
+    verifier="FIELD_ADDED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="655" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="44" />
     <task
         name="verifier"
-        duration="0" />
+        duration="18" />
 
     <artifact
         location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
         type="SPLIT" />
 
     <build
@@ -85,9 +88,6 @@
             location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
@@ -102,18 +102,21 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1544537309386"
-        verifier="CLASS_ADDED" >
+        timestamp="1544539372587"
+        verifier="FIELD_ADDED" >
         <artifact
-            location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
     </build>
     <build
-        build-mode="HOT_WARM"
-        timestamp="1544537342015"
-        verifier="COMPATIBLE" >
+        build-mode="COLD"
+        timestamp="1544539908792"
+        verifier="FIELD_ADDED" >
         <artifact
             location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
     </build>
 

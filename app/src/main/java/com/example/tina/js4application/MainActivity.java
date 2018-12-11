@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private static final String TAG = "MainActivity";
     private static final int  PASSWORD_LENGTH = 6;
+    public static String welcome = "Welcome";
 
     EditText emailET;
     EditText passwordET;
@@ -108,6 +109,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
            showSuccesMessage();
 
            Intent intent = new Intent(MainActivity.this, WelcomeActivity.class);
+           String userMail = emailET.getText().toString();
+           intent.putExtra(welcome, userMail);
            startActivity(intent);
         }
         else if(view.getId() == R.id.register_btn){

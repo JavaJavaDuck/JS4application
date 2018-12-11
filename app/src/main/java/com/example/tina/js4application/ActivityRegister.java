@@ -17,6 +17,7 @@ public class ActivityRegister extends AppCompatActivity implements View.OnClickL
     private static final int  PASSWORD_LENGTH = 6;
     private static final int  PHONE_LENGTH = 9;
 
+
     EditText emailETR;
     EditText passwordETR;
     EditText phoneETR;

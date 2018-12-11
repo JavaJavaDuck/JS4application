@@ -727,6 +727,7 @@ id topPanel
 id uniform
 id up
 id useLogo
+id user_mail
 id welcome_TV
 id withText
 id wrap_content

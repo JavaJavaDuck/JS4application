@@ -7,6 +7,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/welcome"
-        android:id="@+id/welcome_TV"/>
+        android:id="@+id/welcome_TV"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_mail"
+        android:textAlignment="center"/>
 
 </LinearLayout>

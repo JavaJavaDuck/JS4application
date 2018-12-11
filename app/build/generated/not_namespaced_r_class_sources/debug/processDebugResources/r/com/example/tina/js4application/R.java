@@ -2568,9 +2568,10 @@ public final class R {
     public static final int uniform=0x7f070088;
     public static final int up=0x7f070089;
     public static final int useLogo=0x7f07008a;
-    public static final int welcome_TV=0x7f07008b;
-    public static final int withText=0x7f07008c;
-    public static final int wrap_content=0x7f07008d;
+    public static final int user_mail=0x7f07008b;
+    public static final int welcome_TV=0x7f07008c;
+    public static final int withText=0x7f07008d;
+    public static final int wrap_content=0x7f07008e;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f080000;
