@@ -2,6 +2,8 @@ package com.example.tina.js4application;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,6 +22,10 @@ public class ActivityRegister extends AppCompatActivity implements View.OnClickL
     EditText phoneETR;
     Button registerETR;
 
+    boolean emailValidated;
+    boolean passwordValidated;
+    boolean numberValidated;
+
 
 
     @Override
@@ -33,6 +39,62 @@ public class ActivityRegister extends AppCompatActivity implements View.OnClickL
         registerETR = findViewById(R.id.register_btnr);
 
         registerETR.setOnClickListener(this);
+
+        emailETR.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                emailValidated = isValidEmail();
+                enableButton();
+            }
+        });
+
+        passwordETR.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                passwordValidated = isValidPassword();
+                enableButton();
+            }
+        });
+
+        phoneETR.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                numberValidated = isValidNumber();
+                enableButton();
+            }
+        });
+
+
 
     }
 
@@ -76,6 +138,11 @@ public class ActivityRegister extends AppCompatActivity implements View.OnClickL
             return;
         }
         showSuccesMessage();
+    }
+
+    private void enableButton(){
+        registerETR.setEnabled((emailValidated && passwordValidated && numberValidated));
+
     }
 }
 

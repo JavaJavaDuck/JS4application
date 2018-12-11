@@ -96,18 +96,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if(view.getId() == R.id.login_btn){
-           /* if(isValidPassword() && isValidEmail()){
-                showSuccesMessage();
-            }
-            else if(!isValidPassword()){
-                showErrorMessagePassword();
-            }
-            else if(!isValidEmail()){
-                showErrorMessageEmail();
-            }
-            else {
-                showErrorMessage();
-            }*/
 
            if(!isValidEmail()){
                showErrorMessage(getString(R.string.email_error));
