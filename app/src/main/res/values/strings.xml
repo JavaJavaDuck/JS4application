@@ -6,4 +6,9 @@
     <string name="email">Insert your email</string>
     <string name="login_error">Login failed</string>
     <string name="login_success">Login success</string>
+    <string name="email_error">Invalid email</string>
+    <string name="password_error">Invalid password</string>
+    <string name="phone">Insert your phone number</string>
+    <string name="welcome">Welcome</string>
+    <string name="number_error">Invalid number</string>
 </resources>

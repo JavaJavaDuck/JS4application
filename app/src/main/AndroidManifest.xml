@@ -15,6 +15,11 @@
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
             </activity>
+
+        <activity android:name=".ActivityRegister"></activity>
+
+        <activity android:name=".WelcomeActivity"></activity>
+
     </application>
 
 

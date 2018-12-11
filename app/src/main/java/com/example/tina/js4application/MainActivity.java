@@ -1,15 +1,21 @@
 package com.example.tina.js4application;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import static android.util.Patterns.EMAIL_ADDRESS;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = "MainActivity";
+    private static final int  PASSWORD_LENGTH = 6;
 
     EditText emailET;
     EditText passwordET;
@@ -35,25 +41,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private boolean isValidEmail(){
-        //TODO how to check id a email is valid??
-        return false;
+        String email = emailET.getText().toString();
+        return (email != null && android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches());
     }
 
     private boolean isValidPassword(){
-        //TODO check the password's lentgh
-        if(passwordET.length() >= 6){
-            return true;
-        }
-        return false;
+        String password = passwordET.getText().toString();
+        return (password.length() > PASSWORD_LENGTH);
     }
 
-    private showErrorMessage(){
-        //TODO show message to the user
+    private void showErrorMessage(String message){
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
         Log.i(TAG, getString(R.string.login_error));
     }
 
-    private showSuccesMessage(){
-        //
+    private void showSuccesMessage(){
+        Toast.makeText(this, getString(R.string.login_success), Toast.LENGTH_LONG).show();
         Log.i(TAG, getString(R.string.login_success));
     }
 
@@ -93,10 +96,37 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if(view.getId() == R.id.login_btn){
+           /* if(isValidPassword() && isValidEmail()){
+                showSuccesMessage();
+            }
+            else if(!isValidPassword()){
+                showErrorMessagePassword();
+            }
+            else if(!isValidEmail()){
+                showErrorMessageEmail();
+            }
+            else {
+                showErrorMessage();
+            }*/
 
+           if(!isValidEmail()){
+               showErrorMessage(getString(R.string.email_error));
+               return;
+           }
+           if(!isValidPassword()){
+               showErrorMessage(getString(R.string.password_error));
+               return;
+           }
+           showSuccesMessage();
+
+           Intent intent = new Intent(MainActivity.this, WelcomeActivity.class);
+           startActivity(intent);
         }
         else if(view.getId() == R.id.register_btn){
+            //TODO go to register
 
+            Intent i = new Intent(MainActivity.this, ActivityRegister.class);
+            startActivity(i);
         }
     }
 }
