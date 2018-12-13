@@ -11,4 +11,6 @@
     <string name="phone">Insert your phone number</string>
     <string name="welcome">Welcome</string>
     <string name="number_error">Invalid number</string>
+    <string name="switch_1">Light theme</string>
+    <string name="switch_2">Dark theme</string>
 </resources>

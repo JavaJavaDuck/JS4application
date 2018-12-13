@@ -312,6 +312,8 @@ color abc_tint_spinner
 color abc_tint_switch_track
 color accent_material_dark
 color accent_material_light
+color backgroundD
+color backgroundL
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -322,7 +324,6 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
-color buttonPrimary
 color button_material_dark
 color button_material_light
 color colorAccent
@@ -710,6 +711,7 @@ id src_over
 id start
 id submenuarrow
 id submit_area
+id switch_s
 id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
@@ -831,6 +833,8 @@ string phone
 string register
 string search_menu_title
 string status_bar_notification_info_overflow
+string switch_1
+string switch_2
 string welcome
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

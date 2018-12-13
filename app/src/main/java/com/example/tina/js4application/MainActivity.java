@@ -7,7 +7,9 @@ import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import static android.util.Patterns.EMAIL_ADDRESS;
@@ -24,6 +26,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button loginBtn;
     Button registerBtn;
 
+    Switch themeBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,9 +38,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         loginBtn = findViewById(R.id.login_btn);
         registerBtn = findViewById(R.id.register_btn);
+        themeBtn = findViewById(R.id.switch_s);
 
         loginBtn.setOnClickListener(this);
         registerBtn.setOnClickListener(this);
+        themeBtn.setOnCheckedChangeListener
+        (new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                // do something, the isChecked will be
+                // true if the switch is in the On position
+                if(isChecked) {
+                    themeBtn.getRootView().setBackgroundColor(getResources().getColor(R.color.backgroundD));
+                }
+                else
+                    themeBtn.getRootView().setBackgroundColor(getResources().getColor(R.color.backgroundL));
+            }
+        });
 
         Log.i(TAG,"activity created");
     }
@@ -108,15 +125,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
            }
            showSuccesMessage();
 
-           Intent intent = new Intent(MainActivity.this, WelcomeActivity.class);
+           Intent intent = new Intent(this, WelcomeActivity.class);
            String userMail = emailET.getText().toString();
            intent.putExtra(welcome, userMail);
            startActivity(intent);
         }
         else if(view.getId() == R.id.register_btn){
-            //TODO go to register
-
-            Intent i = new Intent(MainActivity.this, ActivityRegister.class);
+            Intent i = new Intent(this, ActivityRegister.class);
             startActivity(i);
         }
     }

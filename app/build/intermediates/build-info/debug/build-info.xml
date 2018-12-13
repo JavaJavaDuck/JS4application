@@ -2,32 +2,29 @@
 <instant-run
     abi="x86"
     api-level="28"
-    build-mode="COLD"
+    build-mode="HOT_WARM"
     density="xxhdpi"
     format="10"
     plugin-version="3.2.1"
-    timestamp="1544539908792"
+    timestamp="1544703479996"
     token="4593422003328817736"
-    verifier="FIELD_ADDED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="655" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="44" />
+        duration="0" />
     <task
         name="verifier"
-        duration="18" />
+        duration="0" />
 
     <artifact
         location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
         type="SPLIT" />
 
     <build
@@ -76,8 +73,8 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1544530103692"
-        verifier="R_CLASS_CHANGE" >
+        timestamp="1544699878107"
+        verifier="CLASS_ADDED" >
         <artifact
             location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
@@ -85,38 +82,41 @@
             location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
+            location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
             location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
             location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
             location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
     </build>
     <build
-        build-mode="COLD"
-        timestamp="1544539372587"
-        verifier="FIELD_ADDED" >
+        build-mode="HOT_WARM"
+        timestamp="1544700118391"
+        verifier="COMPATIBLE" >
         <artifact
-            location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
+            location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/builds/debug/1544700118391/classes.dex"
+            type="RELOAD_DEX" />
     </build>
     <build
-        build-mode="COLD"
-        timestamp="1544539908792"
-        verifier="FIELD_ADDED" >
+        build-mode="HOT_WARM"
+        timestamp="1544703479996"
+        verifier="COMPATIBLE" >
         <artifact
             location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
     </build>
 
