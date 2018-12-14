@@ -1,10 +1,11 @@
 package com.example.tina.js4application;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -12,13 +13,16 @@ import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.Toast;
 
-import static android.util.Patterns.EMAIL_ADDRESS;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = "MainActivity";
     private static final int  PASSWORD_LENGTH = 6;
     public static String welcome = "Welcome";
+
+    SharedPreferences sharePref;
+    SharedPreferences.Editor editor;
 
     EditText emailET;
     EditText passwordET;
@@ -33,6 +37,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        sharePref = getPreferences(Context.MODE_PRIVATE);
+        editor = sharePref.edit();
+
         emailET = findViewById(R.id.email_et);
         passwordET = findViewById(R.id.password_et);
 
@@ -45,17 +52,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         themeBtn.setOnCheckedChangeListener
         (new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                // do something, the isChecked will be
-                // true if the switch is in the On position
+                themeBtn.getRootView().setBackgroundColor(getResources().getColor(isChecked ? R.color.backgroundD : R.color.backgroundL));
+                /*
                 if(isChecked) {
                     themeBtn.getRootView().setBackgroundColor(getResources().getColor(R.color.backgroundD));
                 }
-                else
+                else {
                     themeBtn.getRootView().setBackgroundColor(getResources().getColor(R.color.backgroundL));
+                }*/
+                setColorValueInMemory(isChecked);
             }
         });
 
         Log.i(TAG,"activity created");
+        themeBtn.setChecked(getColorValueFromMemory());
     }
 
     private boolean isValidEmail(){
@@ -134,5 +144,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent i = new Intent(this, ActivityRegister.class);
             startActivity(i);
         }
+    }
+
+    private void setColorValueInMemory(boolean value){
+        editor.putBoolean("BGcolor", value);
+        editor.commit();
+
+    }
+
+    private boolean getColorValueFromMemory(){
+        return sharePref.getBoolean("BGcolor", false);
     }
 }

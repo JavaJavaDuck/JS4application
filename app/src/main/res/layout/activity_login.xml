@@ -12,7 +12,9 @@
             android:layout_height="wrap_content"
             android:hint="@string/email"
             android:id="@+id/email_et"
-            android:inputType="textEmailAddress"/>
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/baseline_email_black_24"
+            android:drawablePadding="5dp"/>
 
     </LinearLayout>
 
@@ -26,7 +28,9 @@
             android:inputType="textPassword"
             android:password="true"
             android:hint="@string/password"
-            android:id="@+id/password_et"/>
+            android:id="@+id/password_et"
+            android:drawableStart="@drawable/baseline_vpn_key_black_24"
+            android:drawablePadding="5dp"/>
 
     </LinearLayout>
 

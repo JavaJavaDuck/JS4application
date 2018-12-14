@@ -2492,11 +2492,11 @@
                 {
                     "source": "/Users/Tina/AndroidStudioProjects/JS4application/app/src/main/res/values/colors.xml",
                     "from": {
-                        "startLines": "5,-1,-1,-1,-1",
-                        "startColumns": "4,-1,-1,-1,-1",
-                        "startOffsets": "199,-1,-1,-1,-1",
-                        "endColumns": "45,-1,-1,-1,-1",
-                        "endOffsets": "240,-1,-1,-1,-1"
+                        "startLines": "-1,-1,-1,2,3",
+                        "startColumns": "-1,-1,-1,4,4",
+                        "startOffsets": "-1,-1,-1,55,102",
+                        "endColumns": "-1,-1,-1,46,50",
+                        "endOffsets": "-1,-1,-1,97,148"
                     },
                     "to": {
                         "startLines": "16,17,30,31,32",

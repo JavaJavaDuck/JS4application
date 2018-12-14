@@ -68,7 +68,7 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/Tina/.gradle
 	android:theme
 		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:10:9-40
 activity#com.example.tina.js4application.MainActivity
-ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:12:9-17:24
+ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:12:9-17:20
 	android:name
 		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:12:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
