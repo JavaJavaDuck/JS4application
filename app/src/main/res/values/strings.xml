@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">JS4application</string>
     <string name="login">Login</string>
     <string name="register">Register</string>
@@ -13,4 +13,12 @@
     <string name="number_error">Invalid number</string>
     <string name="switch_1">Light theme</string>
     <string name="switch_2">Dark theme</string>
+    <string name="aggiungi">+</string>
+    <string name="quantità">1</string>
+    <string name="diminuisci">-</string>
+    <string name="total">Total</string>
+    <string name="total_euro">0€</string>
+    <string name="buy">Buy</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
 </resources>

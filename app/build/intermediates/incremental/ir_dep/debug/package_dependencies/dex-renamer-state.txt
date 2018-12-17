@@ -1,4 +1,4 @@
-#Tue Dec 11 12:30:14 CET 2018
+#Mon Dec 17 11:11:29 CET 2018
 base.0=/Users/Tina/AndroidStudioProjects/JS4application/app/build/intermediates/transforms/dexMerger/debug/10
 path.0=classes.dex
 renamed.0=classes.dex
