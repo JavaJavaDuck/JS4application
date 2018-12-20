@@ -8,21 +8,38 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class WelcomeActivity extends AppCompatActivity implements View.OnClickListener{
+public class WelcomeActivity extends AppCompatActivity implements View.OnClickListener, FoodListAdapter.OnQuantityChange {
 
-    TextView welcome;
-    TextView userEmail;
+    TextView welcome, userEmail, totalEuro;
+
+    ProgressBar progressBar;
 
     RecyclerView recyclerView;
     LinearLayoutManager layoutManager;
     FoodListAdapter adapter;
+
+
+    int total = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,27 +49,21 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
         recyclerView = findViewById(R.id.food_row);
 
         layoutManager = new LinearLayoutManager(this);
-        ArrayList<Food> foodList = new ArrayList<>();
 
-        foodList.add(new Food("Milk", 2.0, 0));
-        foodList.add(new Food("Bread", 1.0, 0));
-        foodList.add(new Food("Water", 0.5, 0));
-        foodList.add(new Food("Tea", 1.0, 0));
-        foodList.add(new Food("Coffee", 0.4, 0));
-        foodList.add(new Food("Chocolate", 2.5, 0));
-        foodList.add(new Food("Cake", 23.0, 0));
-        foodList.add(new Food("Pizza", 3.0, 0));
-        foodList.add(new Food("Biscuits", 6.0, 0));
-        foodList.add(new Food("Croissant", 0.6, 0));
+        getProducts();
 
-        adapter = new FoodListAdapter(this, foodList);
-
+        adapter = new FoodListAdapter(this);
 
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
 
+        adapter.setOnQuantityChange(this);
+
+        progressBar = findViewById(R.id.prog_bar);
+
         welcome = findViewById(R.id.welcome_TV);
         userEmail = findViewById(R.id.user_mail);
+        totalEuro = findViewById(R.id.euro);
 
         String userMail = getIntent().getStringExtra(MainActivity.welcome);
 
@@ -63,10 +74,72 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
 
     @Override
     public void onClick(View v) {
-        if(v.getId() == R.id.user_mail) {
+        if (v.getId() == R.id.user_mail) {
             Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
                     "mailto", getIntent().getStringExtra(MainActivity.welcome), null));
             startActivity(Intent.createChooser(emailIntent, "Send email to..."));
         }
     }
+
+    private void getProducts() {
+
+        // Instantiate the RequestQueue.
+        RequestQueue queue = Volley.newRequestQueue(this);
+        String url = "https://5ba19290ee710f0014dd764c.mockapi.io/Food";
+
+// Request a string response from the provided URL.
+        StringRequest stringRequest = new StringRequest(
+                Request.Method.GET,
+                url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Log.d("Success", response);
+                        try {
+                            JSONObject responseJSON = new JSONObject(response);
+                            JSONArray jsonArray = responseJSON.getJSONArray("foods");
+
+                            ArrayList<Food> foodArrayList = new ArrayList<>();
+
+                            for (int i = 0; i < jsonArray.length(); i++) {
+                                Food food = new Food(jsonArray.getJSONObject(i));
+                                foodArrayList.add(food);
+                            }
+
+                            adapter.setData(foodArrayList);
+
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+
+
+                        }
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.d("Error", error.getMessage());
+            }
+        });
+
+        // Add the request to the RequestQueue.
+        queue.add(stringRequest);
+        }
+
+
+
+    public void onItemAdded(double price) {
+        total += price;
+        progressBar.setProgress(total);
+        totalEuro.setText(String.valueOf(total));
+    }
+
+    public void onItemRemoved(double price) {
+        if (total == 0) {
+            return;
+        }
+        total -= price;
+        totalEuro.setText(String.valueOf(total));
+    }
 }
+

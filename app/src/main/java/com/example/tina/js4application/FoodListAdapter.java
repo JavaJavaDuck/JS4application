@@ -14,7 +14,24 @@ import java.util.ArrayList;
 public class FoodListAdapter extends RecyclerView.Adapter {
 
     private LayoutInflater mInflater;
-    private ArrayList<Food> data;
+    private ArrayList<Food> data = new ArrayList<>();
+
+    private OnQuantityChange onQuantityChange;
+
+    public void setData(ArrayList<Food> data) {
+        this.data = data;
+        notifyDataSetChanged();
+    }
+
+    public interface OnQuantityChange{
+        public void onItemAdded(double price);
+        public void onItemRemoved(double price);
+    }
+
+
+    public void setOnQuantityChange(OnQuantityChange onQuantityChange){
+        this.onQuantityChange = onQuantityChange;
+    }
 
     public FoodListAdapter(Context context, ArrayList<Food> data){
 
@@ -22,6 +39,12 @@ public class FoodListAdapter extends RecyclerView.Adapter {
         mInflater = LayoutInflater.from(context);
 
     }
+
+    public FoodListAdapter(Context context){
+        mInflater = LayoutInflater.from(context);
+    }
+
+
 
     @NonNull
     @Override //crea un oggetto che tiene in memoria gli oggetti della lista
@@ -35,9 +58,9 @@ public class FoodListAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder viewHolder, int i) {
 
         FoodViewHolder foodViewHolder = (FoodViewHolder) viewHolder;
-        foodViewHolder.productName.setText(data.get(i).name);
-        foodViewHolder.productPrice.setText(String.valueOf(data.get(i).price));
-        foodViewHolder.productQuantity.setText(String.valueOf(data.get(i).quantity));
+        foodViewHolder.productName.setText(data.get(i).getName());
+        foodViewHolder.productPrice.setText(String.valueOf(data.get(i).getPrice()));
+        foodViewHolder.productQuantity.setText(String.valueOf(data.get(i).getQuantity()));
     }
 
     @Override //numero di elementi da visualizzare
@@ -45,11 +68,12 @@ public class FoodListAdapter extends RecyclerView.Adapter {
         return data.size();
     }
 
+
     //classe innestata che modella la view del singolo elemento della lista
     public class FoodViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         public TextView productName, productPrice, productQuantity;
-        public  Button addBtn, removeBtn;
+        public Button addBtn, removeBtn;
 
         public FoodViewHolder(View itemView){
             super(itemView);
@@ -59,10 +83,28 @@ public class FoodListAdapter extends RecyclerView.Adapter {
             addBtn = itemView.findViewById(R.id.plus);
             removeBtn = itemView.findViewById(R.id.minus);
 
+            addBtn.setOnClickListener(this);
+            removeBtn.setOnClickListener(this);
+
         }
 
         public void onClick(View view){
+            if(view.getId() == R.id.plus){
+                Food food = data.get(getAdapterPosition());
+                food.increaseQuantity();
+                notifyItemChanged(getAdapterPosition());
 
+                onQuantityChange.onItemAdded(food.getPrice());
+
+            }else if(view.getId() == R.id.minus){
+                Food food = data.get(getAdapterPosition());
+                if(food.getQuantity() > 0){
+                    food.decreaseQuantity();
+                }
+                notifyItemChanged(getAdapterPosition());
+
+                onQuantityChange.onItemRemoved(food.getPrice());
+            }
         }
     }
 }

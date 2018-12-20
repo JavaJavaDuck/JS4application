@@ -648,6 +648,7 @@ id beginning
 id blocking
 id bottom
 id buttonPanel
+id cart
 id center
 id center_horizontal
 id center_vertical
@@ -667,6 +668,7 @@ id edit_query
 id email_et
 id email_etr
 id end
+id euro
 id expand_activities_button
 id expanded_menu
 id fill
@@ -676,6 +678,7 @@ id first_line
 id food_row
 id forever
 id group_divider
+id header
 id home
 id homeAsUp
 id icon
@@ -709,6 +712,7 @@ id password_et
 id password_etr
 id phone_etr
 id plus
+id prog_bar
 id progress_circular
 id progress_horizontal
 id radio

@@ -1,11 +1,12 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-26:12
+ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-28:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/aa71c8ac0a969e50537611c1501afa50/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/afff594c0203c277fea9f8b1e7409a24/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.volley:volley:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/volley-1.1.1.aar/0811dd267d4c52abe26d47f15f19a34a/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/ab5724ac11fc63969aeca21f38fac608/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/c3994af042304c976589d59f5e080c3f/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/68bb193a532f3cd16d7a22ccdc419a0c/AndroidManifest.xml:17:1-22:12
@@ -31,25 +32,31 @@ MERGED from [com.android.support:interpolator:28.0.0] /Users/Tina/.gradle/caches
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/55381e665981ef77ccf24e6dddf14ab5/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/c7932d5fe3cadf7f47c398738060176a/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ca1f12c72525c72d953e98c28bdcb386/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-28:12
 	package
 		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:2:5-46
 		INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-26:12
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-28:12
 		INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-26:12
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:1-28:12
 		INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:4:5-83
+	android:name
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:4:5-23:19
+ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:6:5-25:19
+MERGED from [com.android.volley:volley:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/volley-1.1.1.aar/0811dd267d4c52abe26d47f15f19a34a/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/volley-1.1.1.aar/0811dd267d4c52abe26d47f15f19a34a/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-compat:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/d7875c6754aa1813a9f1bb125e243c19/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/d7875c6754aa1813a9f1bb125e243c19/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/b3a97e89c87caf0f89198a39bac6361c/AndroidManifest.xml:22:5-23:19
@@ -57,39 +64,39 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/Tina/.gradle
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/d7875c6754aa1813a9f1bb125e243c19/AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:11:9-35
 	android:label
-		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:7:9-41
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:9:9-41
 	android:roundIcon
-		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:8:9-54
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:10:9-54
 	android:icon
-		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:6:9-43
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:8:9-43
 	android:allowBackup
-		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:5:9-35
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:7:9-35
 	android:theme
-		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:10:9-40
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:12:9-40
 activity#com.example.tina.js4application.MainActivity
-ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:12:9-17:20
+ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:14:9-19:20
 	android:name
-		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:12:19-47
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:14:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:13:13-16:29
+ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:15:13-18:29
 category#android.intent.category.LAUNCHER
-ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:14:17-76
+ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:16:17-76
 	android:name
-		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:14:27-74
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:16:27-74
 action#android.intent.action.MAIN
-ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:15:17-68
+ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:17:17-68
 	android:name
-		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:15:25-66
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:17:25-66
 activity#com.example.tina.js4application.ActivityRegister
-ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:19:9-63
+ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:21:9-63
 	android:name
-		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:19:19-51
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:21:19-51
 activity#com.example.tina.js4application.WelcomeActivity
-ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:21:9-62
+ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:23:9-62
 	android:name
-		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:21:19-50
+		ADDED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml:23:19-50
 uses-sdk
 INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/Tina/AndroidStudioProjects/JS4application/app/src/main/AndroidManifest.xml
@@ -98,6 +105,8 @@ MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/Tina/.gradle/caches
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/aa71c8ac0a969e50537611c1501afa50/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/afff594c0203c277fea9f8b1e7409a24/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/afff594c0203c277fea9f8b1e7409a24/AndroidManifest.xml:20:5-44
+MERGED from [com.android.volley:volley:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/volley-1.1.1.aar/0811dd267d4c52abe26d47f15f19a34a/AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.1] /Users/Tina/.gradle/caches/transforms-1/files-1.1/volley-1.1.1.aar/0811dd267d4c52abe26d47f15f19a34a/AndroidManifest.xml:7:5-43
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/ab5724ac11fc63969aeca21f38fac608/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/ab5724ac11fc63969aeca21f38fac608/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/Tina/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/c3994af042304c976589d59f5e080c3f/AndroidManifest.xml:20:5-44
