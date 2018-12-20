@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -31,6 +32,7 @@ import java.util.ArrayList;
 public class WelcomeActivity extends AppCompatActivity implements View.OnClickListener, FoodListAdapter.OnQuantityChange {
 
     TextView welcome, userEmail, totalEuro;
+    Button buyBtn;
 
     ProgressBar progressBar;
 
@@ -65,11 +67,14 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
         userEmail = findViewById(R.id.user_mail);
         totalEuro = findViewById(R.id.euro);
 
+        buyBtn = findViewById(R.id.buy_btn);
+
         String userMail = getIntent().getStringExtra(MainActivity.welcome);
 
         userEmail.setText(userMail);
 
         userEmail.setOnClickListener(this);
+        buyBtn.setOnClickListener(this);
     }
 
     @Override
@@ -96,13 +101,12 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
                     public void onResponse(String response) {
                         Log.d("Success", response);
                         try {
-                            JSONObject responseJSON = new JSONObject(response);
-                            JSONArray jsonArray = responseJSON.getJSONArray("foods");
+                            JSONArray responseJSON = new JSONArray(response);
 
                             ArrayList<Food> foodArrayList = new ArrayList<>();
 
-                            for (int i = 0; i < jsonArray.length(); i++) {
-                                Food food = new Food(jsonArray.getJSONObject(i));
+                            for (int i = 0; i < responseJSON.length(); i++) {
+                                Food food = new Food(responseJSON.getJSONObject(i));
                                 foodArrayList.add(food);
                             }
 
@@ -111,8 +115,6 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
 
                         } catch (JSONException e) {
                             e.printStackTrace();
-
-
                         }
                     }
                 }, new Response.ErrorListener() {
@@ -132,14 +134,22 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
         total += price;
         progressBar.setProgress(total);
         totalEuro.setText(String.valueOf(total));
+        enableBtn();
     }
 
     public void onItemRemoved(double price) {
-        if (total == 0) {
+        if (total <=0) {
             return;
         }
         total -= price;
         totalEuro.setText(String.valueOf(total));
+        enableBtn();
     }
+
+    public void enableBtn(){
+        buyBtn.setEnabled(total >= 5);
+    }
+
+
 }
 

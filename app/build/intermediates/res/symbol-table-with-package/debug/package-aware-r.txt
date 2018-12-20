@@ -648,6 +648,7 @@ id beginning
 id blocking
 id bottom
 id buttonPanel
+id buy_btn
 id cart
 id center
 id center_horizontal
